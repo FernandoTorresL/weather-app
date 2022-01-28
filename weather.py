@@ -1,9 +1,8 @@
-# weather.py
-
 import argparse
 import json
+import sys
 from configparser import ConfigParser
-from urllib import parse, request
+from urllib import error, parse, request
 
 # Check and update the API version here:
 BASE_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather"
@@ -53,9 +52,9 @@ def build_weather_query(city_input, imperial=False):
 
 def _get_api_key():
     """Fetch the API key from your configuration file.
-    
+
     Expects a configuration file named "secrets.ini" with structure:
-    
+
         [openweather]
         api_key=<YOUR-OPENWEATHER-API-KEY>
     """
@@ -73,7 +72,11 @@ def get_weather_data(query_url):
     Returns:
         dict: Weather information for a specific city
     """
-    response = request.urlopen(query_url)
+    try:
+        response = request.urlopen(query_url)
+    except error.HTTPError:
+        sys.exit("Can't find weather data for this city.")
+
     data = response.read()
     return json.loads(data)
 
