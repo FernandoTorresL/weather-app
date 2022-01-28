@@ -36,7 +36,12 @@ Once you're set up, you can call the weather CLI by running:
 ```bash
 $ python weather.py <CITY_NAME> [-i]
 ```
-
+---
+> If using python3 try with:
+```bash
+$ python3 weather.py <CITY_NAME> [-i]
+```
+---
 For example, to get the current weather in Vienna, Austria, you can run the following command:
 
 ```bash
