@@ -7,6 +7,8 @@ from urllib import error, parse, request
 # Check and update the API version here:
 BASE_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather"
 PADDING = 20
+REVERSE = "\033[;7m"
+RESET = "\033[0m"
 
 def read_user_cli_args():
     """Handles the CLI user interactions.
@@ -102,7 +104,7 @@ def display_weather_info(weather_data, imperial=False):
     city = weather_data["name"]
     weather_description = weather_data["weather"][0]["description"]
     temperature = weather_data["main"]["temp"]
-    print(f"{city:^{PADDING}}", end="")
+    print(f"{REVERSE}{city:^{PADDING}}{RESET}", end="")
     print(
         f"\t{weather_description.capitalize():^{PADDING}}",
         end=" ",
