@@ -3,6 +3,7 @@ import json
 import sys
 from configparser import ConfigParser
 from urllib import error, parse, request
+from pprint import pp
 
 # Check and update the API version here:
 BASE_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather"
@@ -94,4 +95,4 @@ if __name__ == "__main__":
     user_args = read_user_cli_args()
     query_url = build_weather_query(user_args.city, user_args.imperial)
     weather_data = get_weather_data(query_url)
-    print(weather_data)
+    pp(weather_data)
