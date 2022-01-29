@@ -1,0 +1,50 @@
+python3 weather.py 1770
+python3 weather.py alaska
+python3 weather.py antananarivo
+python3 weather.py astana
+python3 weather.py bat cave
+python3 weather.py bee
+python3 weather.py berlin
+python3 weather.py bitter end
+python3 weather.py boring
+python3 weather.py buenos aires
+python3 weather.py chernobil
+python3 weather.py double trouble
+python3 weather.py eureka
+python3 weather.py fiji
+python3 weather.py gotham
+python3 weather.py green
+python3 weather.py helsinki
+python3 weather.py ho chi minh
+python3 weather.py irkutsk
+python3 weather.py jizan
+python3 weather.py karachi
+python3 weather.py kuala lumpur
+python3 weather.py lahore
+python3 weather.py london
+python3 weather.py madrid
+python3 weather.py mexico city
+python3 weather.py midway
+python3 weather.py minsk
+python3 weather.py national city
+python3 weather.py new york
+python3 weather.py Normal
+python3 weather.py Nowhere else
+python3 weather.py oslo
+python3 weather.py ottawa
+python3 weather.py paris
+python3 weather.py red
+python3 weather.py siberia
+python3 weather.py smoke bend
+python3 weather.py smoke rise
+python3 weather.py toluca
+python3 weather.py toronto
+python3 weather.py Truth or consequences
+python3 weather.py ulan bator
+python3 weather.py vienna
+python3 weather.py vladivostok
+python3 weather.py Why
+python3 weather.py yakutsk
+python3 weather.py yellowknife
+python3 weather.py zap
+python3 weather.py zig zag
